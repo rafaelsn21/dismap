@@ -1,0 +1,68 @@
+:root {
+  --color-background: #0f1f0f;
+  --color-surface: #1a2e1a;
+  --color-text: #e8f5e8;
+  --color-primary: #4ade80;
+  --color-secondary: #22c55e;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--color-background);
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--color-text);
+}
+.pattern-bg {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(74,222,128,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(34,197,94,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(74,222,128,0.03) 0%, transparent 70%);
+}
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.logo-hover {
+  transition: transform 0.3s ease;
+}
+.logo-hover:hover {
+  transform: scale(1.05);
+}
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.news-tag {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#imgFooter {
+  border: solid 0.5px;
+  border-radius: 10px;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+html, body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}

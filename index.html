@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISMAP&D - Início</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="logo-fav.jpg" type="image/png">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+
+ </head>
+ <body class="h-full">
+
+  <div id="app-wrapper" class="w-full min-h-full pattern-bg">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md" style="background: rgba(15,31,15,0.9); border-bottom: 1px solid rgba(74,222,128,0.2);">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <img src="logo.png" alt="DISMAP Logo" class="h-14 w-auto rounded shadow-lg logo-hover">
+                        <div class="hidden sm:block">
+                            <h1 id="nav-title" class="font-display text-xl font-bold" style="color: var(--color-primary);">DISMAP&D</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="#sobre" class="text-sm font-medium hover:opacity-100 opacity-80 transition-opacity" style="color: var(--color-text);">Sobre</a> 
+                        <a href="#noticias" class="text-sm font-medium hover:opacity-100 opacity-80 transition-opacity" style="color: var(--color-text);">Notícias</a> 
+                        <a href="equipe.html" class="text-sm font-medium hover:opacity-100 opacity-80 transition-opacity" style="color: var(--color-text);">Equipe</a> 
+                        <a href="contato.html" class="text-sm font-medium hover:opacity-100 opacity-80 transition-opacity" style="color: var(--color-text);">Contato</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <header class="relative py-20 px-4">
+
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="fade-in">
+                <span class="inline-block px-4 py-2 rounded-full text-sm font-medium mb-6" style="background: rgba(74,222,128,0.15); color: var(--color-primary); border: 1px solid rgba(74,222,128,0.3);"> 🌱 Projeto de Extensão Universitária </span>
+            </div>
+
+            <h2 id="hero-title" class="font-display text-4xl md:text-6xl font-bold mb-6 fade-in stagger-1" style="color: var(--color-text);">DISMAP&D<br>
+                <span style="color: var(--color-primary);">Diagnóstico Sustentável do Manejo de Plantas, Pragas & Doenças</span>
+            </h2>
+            <p class="text-lg md:text-xl opacity-80 max-w-2xl mx-auto mb-8 fade-in stagger-2" style="color: var(--color-text);">Promovendo práticas sustentáveis no diagnóstico e manejo de plantas e parasitas para uma agricultura mais consciente e produtiva.</p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in stagger-3">
+            <a href="#noticias" class="px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105" style="background: var(--color-primary); color: var(--color-background);"> Ver Notícias </a> 
+            <a href="#sobre" class="px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105" style="background: transparent; color: var(--color-primary); border: 2px solid var(--color-primary);"> Conhecer o Projeto </a>
+        </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-16 px-4">
+
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 id="about-title" class="font-display text-3xl md:text-4xl font-bold mb-4" style="color: var(--color-text);">Sobre o Projeto</h3>
+                <div class="w-20 h-1 mx-auto rounded-full" style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));"></div>
+            </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl card-hover" style="background: var(--color-surface); border: 1px solid rgba(74,222,128,0.1);">
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(74,222,128,0.15);">
+                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                        <path d="M14 3L14 25M7 10C10 8 14 6 14 6M21 10C18 8 14 6 14 6M7 18C10 16 14 14 14 14M21 18C18 16 14 14 14 14" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h4 class="font-display text-xl font-bold mb-3" style="color: var(--color-primary);">Diagnóstico</h4>
+                <p class="opacity-80 leading-relaxed" style="color: var(--color-text);">Identificação precisa de doenças e pragas em culturas agrícolas através de metodologias científicas avançadas.</p>
+            </div>
+
+        <div class="p-6 rounded-2xl card-hover" style="background: var(--color-surface); border: 1px solid rgba(74,222,128,0.1);">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(74,222,128,0.15);">
+                <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="10" stroke="var(--color-primary)" stroke-width="2" />
+                    <path d="M14 8V14L18 16" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <h4 class="font-display text-xl font-bold mb-3" style="color: var(--color-primary);">Sustentabilidade</h4>
+            <p class="opacity-80 leading-relaxed" style="color: var(--color-text);">Práticas de manejo que respeitam o meio ambiente e promovem a saúde do solo e das plantas.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-hover" style="background: var(--color-surface); border: 1px solid rgba(74,222,128,0.1);">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style="background: rgba(74,222,128,0.15);">
+                <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                    <path d="M6 21L14 7L22 21H6Z" stroke="var(--color-primary)" stroke-width="2" stroke-linejoin="round" />
+                    <circle cx="14" cy="16" r="2" fill="var(--color-primary)" />
+                </svg>
+            </div>
+            <h4 class="font-display text-xl font-bold mb-3" style="color: var(--color-primary);">Extensão</h4>
+            <p class="opacity-80 leading-relaxed" style="color: var(--color-text);">Transferência de conhecimento acadêmico para produtores rurais e comunidades agrícolas.</p>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <footer class="py-8 px-4" style="background: var(--color-background); border-top: 1px solid rgba(74,222,128,0.1);">
+        <div class="max-w-6xl mx-auto text-center">
+            <p id="footer-text" class="text-sm opacity-60" style="color: var(--color-text);">&copy; 2026 DISMAP&D - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    </div>
+ </body>
+</html>
